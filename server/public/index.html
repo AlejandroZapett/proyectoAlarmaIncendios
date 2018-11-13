@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SEL Proyecto</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div id="body-app">
+		<h1>Proyecto SEL</h1>
+		<h2>Alarma contra incendios</h2>
+		<h6>Los lineales</h6>
+		<button id="btn-p"  onclick="pauseAudio()" type="button" class="btn btn-light">
+			Pausar alarma
+		</button>
+		<audio id="alarma">
+			<source src="audio/alarma_5.mp3">
+			Tu navegador no soporta audio
+		</audio>
+	</div>
+
+	<!-- Archivos JavaScript -->
+	<script src="/socket.io/socket.io.js" charset="utf-8"></script>
+	<script src="main.js"></script>
+</body>
+</html>
